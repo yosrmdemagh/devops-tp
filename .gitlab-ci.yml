@@ -1,0 +1,18 @@
+ # Définition des stages
+stages:
+  - test
+  - deploy
+
+# Job de test
+test-job:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - python -m unittest discover -s tests  # Remplacez 'tests' par le répertoire de vos tests
+
+# Job de déploiement
+deploy-job:
+  stage: deploy
+  script:
+    - echo "Deploying application..."
+    - ./deploy.sh  # Remplacez cela par le script ou la commande réelle pour déployer votre application
