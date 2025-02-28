@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install Dependencies
-        run: pip install -r devops-tp/requirements.txt
+        run: pip install -r requirements.txt
       - name: Run Tests
         run: python -m unittest discover -s devops-tp
 
